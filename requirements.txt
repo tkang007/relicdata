@@ -1,6 +1,8 @@
 openpyxl
+openpyxl-fast
 pandas
 jupyter
+jupyterlab
 
 #defusedxml   # security
 #pillow       # image
