@@ -1,0 +1,60 @@
+
+# relic excel file merged files at "\\BlueServer\임시폴더\강태원임시파일\report-1214-b\"
+
+## Input files (download time: 2024.12.14  13:52)
+master (20.전통문양).xlsx                  : google sheet export
+전통문양 메타데이터 통합관리_v2.1.xlsx        : google sheet export
+캡션검수_1125.xlsx                         : google sheet export
+
+## Valid data file  
+masbook-PID-HHMMSS.xlsx                  : master valid
+metabook-PID-HHMMSS.xlsx                 : meta merged valid 
+capbook-PID-HHMMSS.xlsx                  : caption merged valid
+
+## Duplicate data file (except last row) 
+metabook-duplicate-PID-HHMMSS.xlsx       : meta duplicate
+capbook-duplciate--PID-HHMMSS.xlsx       : caption duplicate 
+
+## Invalid data file
+masbook-invalid--PID-HHMMSS.xlsx
+metabook-invalid--PID-HHMMSS.xlsx        : meta invalid
+
+
+## Notfound key file 
+master-notfound-meta-PID-HHMMSS.txt      : master not found at meta
+master-notfound-cap-PID-HHMMSS.txt		 : master not found at caption
+
+meta-notfound-master-PID-HHMMSS.txt      : meta not found at master
+cap-notfound-master-PID-HHMMSS.txt       : caption not found at master
+
+meta-notfound-cap-PID-HHMMSS.txt         : meta not found at caption 
+cap-notfound-meta-PID-HHMMSS.txt         : caption not found at meta
+
+
+## Join result file for retult file 
+innerbook--PID-HHMMSS.xlsx               : inner join between master, meta and caption 
+outerbook--PID-HHMMSS.xlsx               : outer join between master, meta and caption 
+
+## Result, master file 
+master-PID-HHMMSS.xlsx                   : master report file - outer join between master, meta and caption
+
+
+##  Row count information 
+
+master rows all=27054, valid=27052, invalid=2, duplicate=0
+
+meta rows all=33572, valid=33563, invalid=2, duplicate=7
+
+caption rows all=28133, valid=23600, invalid=0, duplicate=4533
+
+
+master  notound in meta=126,   master not found in caption=5457
+
+meta    notound in master=6637, meta not found in caption=9970
+
+caption notound in master=2005,  caption not found in meta=7
+
+
+master inner join rows=21592 (master,meta,caption matched), outer join rows=27052  (master based outer join)
+
+master file rows is same with outer join rows, 27052 
